@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ch-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>健康当归</title>
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/toTop.css">
+</head>
+<style>
+   body {
+    position: relative;
+    padding-bottom: 100px;
+   }
+
+   #bg::before {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/页面背景.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+    -webkit-filter: opacity(30%);
+    filter: opacity(30%)
+   }
+
+.pic {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  clip-path: polygon(0 0,100% 0%,100% 100%,0 100%);
+  transition: clip-path 0.5s ease;
+  margin-bottom:100px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  background: url(../image/1.jpg);
+  background-size: cover;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  border-radius: 1em;
+  box-shadow: 10px 10px 10px 1px rgb(0, 0, 0, 0.2);
+}
+
+.main {
+    width:100%;
+    margin: auto;
+    padding-bottom: 100px;
+    background-color: rgb(203, 216, 158, 0.5); 
+    box-shadow: 20px 10px 40px 1px rgba(0, 0, 0, 0.2);  
+    border-radius: 1em;
+    margin-bottom: 250px;
+  }
+
+  .main-title{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    line-height: 100px;
+    text-align: center; 
+    letter-spacing: 6px;
+    color: rgb(46, 46, 46);
+  }
+
+  .main1-1 {
+    width: 95%;
+    margin: auto;
+    padding:60px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255,0.6);
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.2); 
+    border-radius: 1em;
+    line-height: 40px;
+    color: rgb(46, 46, 46);
+  }
+
+  .main1 {
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255,0.6);
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.2); 
+    border-radius: 1em;
+    transition: scale 1s ease;
+  }
+
+  .main1:hover {
+    scale: 1.1;
+  }
+
+  .main1 .img {
+    width: 200px;
+    height: 300px;
+  } 
+
+  .main1 .text {
+    width: 75%;
+    height: 90%;
+    margin-left: 3vw;
+    padding: 20px 0px 24px 0px;
+  }
+
+  .main1 .text h2 {
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font: 34px 'Microsoft yahei';
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+  }
+
+  .main1 .text div {
+    height: 80%;
+    font: 18px 'Microsoft yahei';
+    overflow: auto;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    letter-spacing: 2px;
+  }
+</style>
+<body>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">返回顶部</button>
+  <div id="bg">
+    <div class="pic">
+      <div class="img"> 
+        <header class="head">
+          <h1>健康当归</h1>
+          <ul id="nav">        
+            <li class="slide2"></li>
+            <li><a href="./index.html">网站首页</a></li>
+            <li><a href="./intro.html">中医智慧</a></li>
+            <li><a href="./book.html">中医典籍</a></li>
+            <li><a href="./drug.html">草药鉴赏</a></li>
+            <li><a href="./event.html">发展历程</a></li>
+            <li class="use"></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-title"><h1>中医简介</h1></div>
+      <div class="main1-1">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中医，中华民族的瑰宝，拥有数千年的悠久历史。它以独特的理论体系和丰富的治疗手段，为人类的健康保驾护航。中医强调整体观念，认为人体是一个有机的整体，各脏腑器官相互关联、相互影响。同时，中医注重辨证论治，根据不同的症状和体征，辨别疾病的证型，从而制定个性化的治疗方案。中医的治疗方法多样，包括中药、针灸、推拿、拔罐等。中药取材于自然，通过合理配伍，发挥其独特的疗效。针灸则以经络学说为基础，刺激特定穴位，调节人体气血。中医在防治疾病、养生保健等方面发挥着重要作用，为人们提供了一种绿色、安全、有效的医疗选择。在当今时代，中医不断与时俱进，与现代医学相互融合，为人类健康事业作出更大的贡献。
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-title"><h1>古老的疗法</h1></div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/video/BV1ft42177Co/?spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/中药.webp');"></div></a>
+        <div class="text">
+          <h2>中药</h2>
+          <div>中药疗法基于以下几个核心理论：<br>
+            阴阳五行：强调阴阳平衡和五行相生相克的关系，指导疾病的诊断和治疗。<br>
+            脏腑学说：认为脏腑的功能和相互关系对人体健康至关重要，任何脏腑功能失调都可能导致疾病。<br>
+            气血理论：气为生命的基础，血为滋养的物质，气血的充盈与运行关系到健康。<br>
+            经络学说：经络是气血运行的通道，通过经络的调理，可以改善身体健康状况。<br>
+            中药疗法广泛应用于以下几个方面：<br>
+            疾病治疗：针对各种慢性病、内科疾病（如糖尿病、高血压）、外科疾病、妇科疾病、儿科疾病等的治疗。<br>
+            预防保健：通过日常的中药调理，增强身体免疫力，预防疾病。<br>
+            辅助疗法：在现代医学治疗中，作为辅助治疗方法，缓解药物副作用，提高疗效。<br>
+            养生：利用中药进行养生调理，保持健康、延缓衰老。<br>
+            中药疗法作为传统医学的重要组成部分，强调整体观念和个体差异，通过自然药物来调节身体健康。随着现代医学的发展，中药疗法越来越受到重视，并逐渐与现代医学相结合，形成更为全面的健康管理模式</div>
+        </div>
+      </div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/video/BV1Lr4y1A73P/?spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/推拿.webp');"></div></a>
+        <div class="text">
+          <h2>推拿</h2>
+          <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp推拿是一种传统的中医治疗方法，主要通过手法对人体的经络、穴位和肌肉进行按压、推揉、捏拿等操作，以达到舒筋活络、调节气血、缓解疼痛和促进健康的目的。<br>
+            <br>
+          历史背景：推拿的历史可以追溯到几千年前，最早见于古代的中医经典《黄帝内经》。推拿作为中医治疗的部分，经过长期的发展和演变，形成了丰富的技法和理论体系。<br>
+          <br>
+          基本手法：常见的推拿手法包括推、拿、捏、揉、点、拍等。不同的手法适用于不同的身体部位和症状。<br>
+          推：用手掌或手指轻轻向前推动，适用于全身的放松。<br>
+          拿：用手指抓住皮肤和肌肉，轻轻提起，适用于深层肌肉的放松。<br>
+          揉：用手掌或手指做圆周运动，适合舒缓紧张的肌肉。<br>
+          <br>
+          适应症：推拿广泛应用于颈肩腰腿痛、运动损伤、头痛、消化不良、失眠、焦虑等多种症状的治疗。
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/cheese/play/ss22190?query_from=0&search_id=2650573679610972107&search_query=%E6%B0%94%E5%8A%9F%E8%A7%86%E9%A2%91&csource=common_hpsearch_null_null&spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/气功.webp');"></div></a>
+        
+        <div class="text">
+          <h2>气功</h2> 
+          <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp气功是中国传统文化中的一种身心锻炼方法，结合了呼吸、动作和意念，旨在通过调节气息、增强身体机能、提高健康水平。气功的基础理论源于中医的“气”学说，强调气在人体内的流动和调节。气功可以分为两大类：动功和静功。<br>
+            <br>
+            主要类型:<br>
+            动功：通过特定的体操、动作来调动和增强身体的气。典型的动功有太极拳、八段锦、五禽戏等。<br>
+            静功：通常是通过静坐、冥想等方式调节气息，增强内在的气感和精神集中，如静坐打坐、观想等。<br>
+            <br>
+            文化传承与精神追求：气功不仅是一种身体锻炼方式，还承载着丰富的中国传统文化，强调人与自然的和谐关系，追求身心合一的境界，促进了传统文化的传承和发展。
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/video/BV1Vr4y1o7np/?spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/火罐.webp');"></div></a>
+        <div class="text">
+          <h2>火罐</h2> 
+          <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp火罐疗法，又称为拔罐，是一种传统的中医疗法，主要通过在皮肤表面使用负压（通常是通过加热空气并迅速密封罐体）来促进血液循环、缓解疼痛和放松肌肉。<br>
+            <br>
+手法：通常使用玻璃、竹子或塑料制成的罐子。施治时，罐子内会通过火焰加热使空气膨胀，然后迅速放在皮肤上，形成负压，导致皮肤被吸入罐内。<br>
+<br>
+功效:<br>
+促进血液循环：火罐可以通过吸引皮肤和底下的肌肉，刺激血液流动，增强局部血液循环。<br>
+缓解疼痛：对肌肉和关节的紧张和疼痛有显著的缓解效果，尤其是背部、肩膀和颈部的疼痛。<br>
+放松肌肉：通过促进血流和减轻肌肉紧张，能够有效帮助身体放松，减少肌肉痉挛。<br>
+排毒：火罐疗法被认为可以帮助排出体内的毒素和废物，促进新陈代谢。<br>
+增强免疫力：通过改善血液循环和淋巴流动，有助于增强身体的免疫反应。<br>
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/video/BV1Qq4y1J7rJ/?spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/艾灸.webp');"></div></a>
+        <div class="text">
+          <h2>艾灸</h2> 
+          <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp艾灸是一种传统的中医治疗方法，主要利用艾草制成的艾条或艾柱，通过点燃后产生的温热效应来刺激身体的特定腧穴（经络上的穴位）。其基本原理是通过温热刺激来促进气血流通，调和阴阳，增强身体的自我修复能力。<br>
+            <br>
+            艾灸的方式：<br>
+艾条灸：将艾条点燃后，靠近皮肤（通常是几厘米的距离）进行熏灸，温度适中，持续时间根据具体情况而定。
+艾柱灸：使用较大的一段艾柱，可以直接放置于腧穴上，点燃后进行灸治。
+间接灸：在皮肤与艾条之间放置姜片、盐、蒜等介质，以缓和热力的直接接触。<br>
+<br>
+艾灸的意义：<br>
+促进血液循环：艾灸可以提高局部血液循环，增强新陈代谢，有助于缓解疼痛、减轻炎症。<br>
+调节免疫功能：艾灸能够增强免疫力，帮助身体抵御疾病，常用于感冒、流感等症状的预防和治疗。<br>
+缓解疼痛：艾灸常用于缓解各种疼痛，如关节炎、肌肉酸痛、痛经等。它的热量可以松弛肌肉，减轻疼痛感。<br>
+平衡阴阳：中医理论认为，人体的健康状态依赖于阴阳的平衡。艾灸可以调节体内的阴阳，使其恢复平衡。<br>
+改善消化：通过艾灸特定腧穴，可以促进消化，改善胃肠功能，缓解食欲不振、腹胀等问题。<br>
+心理健康：艾灸也有助于缓解压力，放松身心，改善睡眠质量。</div>
+        </div>
+      </div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/video/BV1ci4y1Z7Dk/?spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/针灸2.webp');"></div></a>
+        <div class="text">
+          <h2>针灸</h2> 
+          <div>针灸的基本原理：<br>
+            阴阳理论：
+            针灸的治疗基础是阴阳平衡。中医认为，身体的健康状态与阴阳的平衡密切相关，针灸通过调节阴阳达到治疗效果。<br>
+            气血理论：
+            中医认为“气”是生命活动的基本动力，而“血”是滋养身体的物质。针灸可以调节气血的运行，促进身体的自我修复。<br>
+            经络学说：
+            经络是气血运行的通道，连接着脏腑和组织。针灸通过刺激特定的经络穴位，可以影响整个身体的功能，达到治疗目的。<br>
+            <br>
+            针灸的意义：<br>
+            疼痛管理：
+            常用于缓解各种类型的疼痛，如头痛、颈肩疼痛、背痛、关节疼痛等。<br>
+            消化系统疾病：
+            针灸可以改善食欲不振、胃痛、便秘等消化问题。<br>
+            呼吸系统疾病：
+            用于缓解哮喘、过敏性鼻炎、咳嗽等呼吸道疾病。<br>
+            妇科疾病：
+            针灸可用于缓解痛经、调节月经周期、促进生育等。<br>
+            心理健康：
+            适用于焦虑、抑郁、失眠等心理问题的调理。<br>
+            整体调理与养生：
+            通过针灸促进身体自我修复，提高免疫力，改善身体状态。<br>
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        <a href="https://www.bilibili.com/video/BV1Dw411M7bN/?spm_id_from=333.337.search-card.all.click" target="_blank"><div class="img" style="background-image: url('../image/疗法/食疗.webp');"></div></a>
+        <div class="text">
+          <h2>食疗</h2> 
+          <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp食疗，或称为“饮食疗法”，是指通过合理的饮食来达到预防和治疗疾病、促进健康的目的。这一理念源于中国传统医学，强调饮食与健康之间的密切关系，认为“药食同源”，即食物和药物具有相同的健康价值。<br>
+            <br>
+            历史背景：<br>
+食疗的思想在中国已有几千年的历史，早在《黄帝内经》中就有关于饮食与健康的论述。古人相信，通过食物的选择和搭配，可以调节身体的阴阳平衡，增强体质，预防疾病。<br>
+基本原则：
+食疗注重食物的性质（如寒、热、温、凉）、味道（如甘、苦、酸、辛、咸）和对身体的影响。不同的食物适用于不同的体质和健康状况。<br>
+食材分类：
+食疗的食材通常分为五类：谷物、蔬菜、水果、肉类和豆类，每类食材都有其独特的营养价值和健康功效。<br>
+预防疾病：
+通过科学的饮食，可以增强身体的免疫力，降低慢性病（如心血管疾病、糖尿病、肥胖等）的发生风险。<br>
+促进康复：
+对于已经患病的人，合理的饮食可以帮助恢复健康，改善症状。例如，特定食材可以帮助提高抗炎能力、促进消化、调节血糖等。<br>
+调节身体：
+食疗可以根据个体的体质进行调理，帮助调节身体内部的平衡，如改善睡眠、缓解焦虑、提升精力等。<br>
+提供营养：
+食疗强调全面均衡的营养摄入，通过合理搭配不同种类的食物，确保身体获得所需的各种营养素，支持生理功能。<br>
+心理健康：
+健康的饮食不仅对身体有益，还能改善心理状态。合理的饮食习惯有助于情绪稳定，降低焦虑和抑郁的风险。<br>
+文化传承：
+食疗是中华饮食文化的重要组成部分，承载着丰富的传统智慧和文化价值，体现了人与自然的和谐关系。<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <footer>我是底部</footer> -->
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+const header = document.querySelector('.pic');
+const img = document.querySelector('.img');
+let scrollDistance = 0;
+let requestId = null;
+
+function updateHeaderClipPath() {
+    const clipPathValue = `polygon(0 0, 100% 0%, 100% ${(scrollDistance <= 600) ? 100 - ((scrollDistance / 600) * 60) : 75}%, 0 100%)`;
+    header.style.clipPath = clipPathValue;
+    const scaleValue = 1 + ((scrollDistance / 600) * 1);
+    img.style.transform = `scale(${scaleValue})`;
+    const opacityValue = (scrollDistance / 600);
+}
+
+function scrollHandler(event) {
+    if (event.deltaY < 0) {
+        scrollDistance = Math.max(0, scrollDistance + event.deltaY);
+    } else {
+        scrollDistance = Math.min(600, scrollDistance + event.deltaY);
+    }
+    if (!requestId) {
+        requestId = window.requestAnimationFrame(() => {
+            updateHeaderClipPath();
+            requestId = null;
+        });
+    }
+    showTopButton(); // 显示返回顶部按钮
+}
+
+function showTopButton() {
+    const mybutton = document.getElementById("topBtn");
+    if (window.scrollY > 1000) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    scrollDistance = 0; // 重置scrollDistance
+    updateHeaderClipPath(); // 更新剪裁路径
+}
+
+// 监听 wheel 和 scroll 事件
+window.addEventListener('wheel', scrollHandler);
+window.addEventListener('scroll', showTopButton);
+
+
+</script>
+</html>
+

@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color:#333
+}
+
+body {
+  background-color: #d8cfab;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.head {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background-color: rgba(170, 163, 133, 0.5);
+  justify-content: space-between;
+}
+
+.head h1 {
+  margin-left: 2vw;
+  line-height: 60px;
+  color: white;
+}
+
+#nav {
+    position: relative;
+    border: none;
+    display: flex;
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+}
+
+#nav .use {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/用户头像.png);
+  background-size: cover;
+  margin:5px 10px 5px 10px;
+  border-radius: 100%;
+}
+
+.use:hover {
+  cursor: pointer;
+}
+
+#nav li a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    position: relative;
+    font: 500 20px '优设标题黑';
+    border: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    z-index: 3;
+}
+
+.slide2 {
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    border-radius: 1em;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+    opacity: 0;
+    background-color: rgba(81, 77, 58, 0.5);
+    z-index: 1;
+}
+
+.squeeze {
+    transform: scale(0.9);
+}
+
+
+
+
+
