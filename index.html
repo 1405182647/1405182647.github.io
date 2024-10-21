@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ch-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>健康当归</title>
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/toTop.css">
+  <link rel="stylesheet" href="../css/toTop.css">
+</head>
+<style>
+.shell {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 3px;
+}
+
+.big-img,.heading,.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 30px;
+  letter-spacing: 2px;
+}
+
+.big-img {
+  transform: translateZ(-1px) scale(1.6);
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+
+.title {
+    height: 45vh;
+    background-color: #a08a79;
+    padding: 80px;
+}
+
+.title h1 {
+  color: #e9e9e9;
+}
+
+.heading {
+  z-index: -1;
+  transform: translateY(-40vh) translateZ(1px);
+  color: #fff;
+  font-size: 30px;
+}
+
+</style>
+<body>
+<button onclick="topFunction()" id="topBtn" title="Go to top">返回顶部</button>
+<div class="shell">
+  <div class="pic">
+    <div class="img">
+      <header class="head"> 
+        <h1>健康当归</h1>
+        <ul id="nav">        
+          <li class="slide2"></li>
+          <li><a href="./index.html">网站首页</a></li>
+          <li><a href="./intro.html">中医智慧</a></li>
+          <li><a href="./book.html">中医典籍</a></li>
+          <li><a href="./drug.html">草药鉴赏</a></li>
+          <li><a href="./event.html">发展历程</a></li>
+          <li class="use"></li>
+        </ul>
+      </header>
+    </div>
+  </div>
+  <div class="big-img" style="background-image: url('../image/首页药材.jpg');"></div>
+  <div class="heading"><h1>中医智慧·药韵千年</h1></div>
+  <div class="title">
+    <h1>一个探索中医药奥秘、弘扬传统医学智慧的数字殿堂。在这里，我们不仅追溯千年古方，更融合现代科技，为您揭示中医药的博大精深。</h1>
+  </div>
+  <div class="big-img" style="background-image:url('../image/首页书籍.webp');"></div>
+  <div class="heading"><h1>中医典籍·智慧之光</h1></div>
+  <div class="title">
+    <h1>一座汇聚古籍精华、传承医学经典的智慧宝库。在这里，我们不仅阅读千年古籍，更领悟古人智慧，为您展现中医典籍的深远影响。</h1>
+  </div>
+  
+  <div class="big-img" style="background-image:url('../image/首页中医.webp');"></div>
+  <div class="heading"><h1>药草鉴赏·自然之馈</h1></div>
+  <div class="title">
+    <h1>一个探索草本世界、品鉴药材魅力的奇妙之旅。在这里，我们不仅辨识百草形态，更领悟药性药理，为您揭开药草疗愈的奥秘面纱。</h1> 
+  </div>
+  <div class="big-img" style="background-image:url('../image/首页热点.jpg');"></div>
+  <div class="heading"><h1>中医热点·时代之声</h1></div>
+  <div class="title">
+    <h1>一扇洞悉中医前沿、把握医学动态的窗口。在这里，我们不仅关注中医发展，更紧跟时代脉搏，为您传递中医领域的最新热点与趋势。</h1> 
+  </div>
+    <!-- <footer>我是底部</footer> -->
+</div> 
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/toTop.js"></script>
+<!-- <script src="../js/toTop.js"></script> -->
+</html> 

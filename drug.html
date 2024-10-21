@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ch-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>健康当归</title>
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/toTop.css">
+</head>
+<style>
+   body {
+    position: relative;
+   }
+
+   #bg::before {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/页面背景.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+    -webkit-filter: opacity(30%);
+    filter: opacity(30%)
+   }
+
+  .main {
+    width:90%;
+    margin: auto;
+    margin-top: 20%;
+    background-color: rgb(203, 216, 158, 0.2); 
+    box-shadow: 20px 20px 80px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 70px 20px 50px 20px;
+  }
+
+  .title {
+    width:100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .main1 {
+    width: 300px;
+    height: 400px; 
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255,0.4);
+    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2); 
+    border-radius: 1em;
+    transition: scale 0.3s ease;
+    overflow-y: hidden;
+  }
+
+  .main1:hover {
+    scale: 1.1;
+  }
+
+  .main1:hover .img { 
+    height: 400px;
+    border-radius: 1em;
+  }
+
+  .main1 h2 {
+    transition: display 0.3s ease
+  }
+
+  .main1:hover h2 {
+    display: none;
+  }
+
+  .main1 .img {
+    width: 300px;
+    height: 300px;
+    border-radius: 1em 1em 0 0;
+    transition: height 0.3s ease;
+    background-size: cover;
+  } 
+
+  .main1 .text {
+    height: 100px;
+  }
+
+  /* .main1 .text h2 {
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font: 34px 'Microsoft yahei';
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+  } */
+
+  /* .main1 .text div {
+    height: 80%;
+    font: 18px 'Microsoft yahei';
+    overflow: auto;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    letter-spacing: 2px;
+  } */
+
+
+  /* 正文 */
+  .shell {
+  position: relative; /* 使得绝对定位基于shell容器 */
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 3px;
+}
+
+.big-img,.heading,.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 30px;
+  letter-spacing: 2px;
+}
+
+.big-img {
+  transform: translateZ(-1px) scale(1.6);
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* .title {
+    height: 50vh;
+    background-color: #d8cfab;
+}
+
+.title h1 {
+  color: #000;
+} */
+
+.heading {
+  z-index: -1;
+  transform: translateY(-40vh) translateZ(1px);
+  color: #fff;
+  font-size: 30px;
+}
+</style>
+<body>
+<button onclick="topFunction()" id="topBtn" title="Go to top">返回顶部</button>
+<div id="bg">
+<div class="shell">
+  <div class="pic">
+    <div class="img">
+      <header class="head">
+        <h1>健康当归</h1>
+        <ul id="nav">        
+          <li class="slide2"></li>
+          <li><a href="./index.html">网站首页</a></li>
+          <li><a href="./intro.html">中医智慧</a></li>
+          <li><a href="./book.html">中医典籍</a></li>
+          <li><a href="./drug.html">草药鉴赏</a></li>
+          <li><a href="./event.html">发展历程</a></li>
+          <li class="use"></li>
+          
+        </ul>
+      </header>
+    </div>
+  </div>
+  <div class="big-img" style="background-image: url('../image/首页药材.jpg');"></div>
+  <div class="heading"><h1>草药鉴赏</h1></div>
+  <div class="title">
+    <div class="main">  
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/丹参" target="_blank">
+          <div class="img" style="background-image: url(../image/丹参.jpg);"></div>
+          <div class="text">
+            <h2>丹参</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/当归" target="_blank">
+          <div class="img" style="background-image: url(../image/当归.jpg);"></div>
+          <div class="text">
+            <h2>当归</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/冬虫夏草" target="_blank">
+          <div class="img" style="background-image: url(../image/冬虫夏草.webp);"></div>
+          <div class="text">
+            <h2>冬虫夏草</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/茯苓" target="_blank">
+          <div class="img" style="background-image: url(../image/茯苓.webp);"></div>
+          <div class="text">
+            <h2>茯苓</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/海马" target="_blank">
+          <div class="img" style="background-image: url(../image/海马.jpg);"></div>
+          <div class="text">
+            <h2>海马</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/黄芪" target="_blank">
+          <div class="img" style="background-image: url(../image/黄芪.jpeg);"></div>
+          <div class="text">
+            <h2>黄芪</h2> 
+          </div>
+         </a>
+        </div>        
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/金银花" target="_blank">
+          <div class="img" style="background-image: url(../image/金银花.webp);"></div>
+          <div class="text">
+            <h2>金银花</h2> 
+          </div>
+         </a>
+        </div>        
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/决明子" target="_blank">
+          <div class="img" style="background-image: url(../image/决明子.webp);"></div>
+          <div class="text">
+            <h2>决明子</h2> 
+          </div>
+         </a>
+        </div>        
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/鹿茸" target="_blank">
+          <div class="img" style="background-image: url(../image/鹿茸.webp);"></div>
+          <div class="text">
+            <h2>鹿茸</h2> 
+          </div>
+         </a>
+        </div>        
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/罗汉果" target="_blank">
+          <div class="img" style="background-image: url(../image/罗汉果.webp);"></div>
+          <div class="text">
+            <h2>罗汉果</h2> 
+          </div>
+         </a>
+        </div>        
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/麦冬" target="_blank">
+          <div class="img" style="background-image: url(../image/麦冬.png);"></div>
+          <div class="text">
+            <h2>麦冬</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/人参" target="_blank">
+          <div class="img" style="background-image: url(../image/人参.png);"></div>
+          <div class="text">
+            <h2>人参</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/天麻" target="_blank">
+          <div class="img" style="background-image: url(../image/天麻.jpg);"></div>
+          <div class="text">
+            <h2>天麻</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/蜈蚣" target="_blank">
+          <div class="img" style="background-image: url(../image/蜈蚣.webp);"></div>
+          <div class="text">
+            <h2>蜈蚣</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/枸杞" target="_blank">
+          <div class="img" style="background-image: url(../image/枸杞.webp);"></div>
+          <div class="text">
+            <h2>枸杞</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/乌梅" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/乌梅.webp);"></div>
+          <div class="text">
+            <h2>乌梅</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/五指毛桃" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/五指毛桃.webp);"></div>
+          <div class="text">
+            <h2>五指毛桃</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/天冬" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/天冬.webp);"></div>
+          <div class="text">
+            <h2>天冬</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/太子参" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/太子参.webp);"></div>
+          <div class="text">
+            <h2>太子参</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/山药" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/山药.webp);"></div>
+          <div class="text">
+            <h2>山药</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/川贝母" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/川贝母.webp);"></div>
+          <div class="text">
+            <h2>川贝母</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/巴戟天" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/巴戟天.webp);"></div>
+          <div class="text">
+            <h2>巴戟天</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/无花果" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/无花果.webp);"></div>
+          <div class="text">
+            <h2>无花果</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/杏仁" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/杏仁.webp);"></div>
+          <div class="text">
+            <h2>杏仁</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/杜仲" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/杜仲.webp);"></div>
+          <div class="text">
+            <h2>杜仲</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/核桃仁" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/核桃仁.webp);"></div>
+          <div class="text">
+            <h2>核桃仁</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/槐花" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/槐花.webp);"></div>
+          <div class="text">
+            <h2>槐花</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/灵芝" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/灵芝.webp);"></div>
+          <div class="text">
+            <h2>灵芝</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/玉竹" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/玉竹.webp);"></div>
+          <div class="text">
+            <h2>玉竹</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/白术" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/白术.webp);"></div>
+          <div class="text">
+            <h2>白术</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/白芷" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/白芷.webp);"></div>
+          <div class="text">
+            <h2>白芷</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/百合" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/百合.webp);"></div>
+          <div class="text">
+            <h2>百合</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/石斛" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/石斛.webp);"></div>
+          <div class="text">
+            <h2>石斛</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/紫苏" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/紫苏.webp);"></div>
+          <div class="text">
+            <h2>紫苏</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/红枣" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/红枣.webp);"></div>
+          <div class="text">
+            <h2>红枣</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/肉苁蓉" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/肉苁蓉.webp);"></div>
+          <div class="text">
+            <h2>肉苁蓉</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/胎菊" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/胎菊.webp);"></div>
+          <div class="text">
+            <h2>胎菊</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/花旗参" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/花旗参.webp);"></div>
+          <div class="text">
+            <h2>花旗参</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/茴香" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/茴香.webp);"></div>
+          <div class="text">
+            <h2>茴香</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/莲子" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/莲子.webp);"></div>
+          <div class="text">
+            <h2>莲子</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/葛根" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/葛根.webp);"></div>
+          <div class="text">
+            <h2>葛根</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/蜜枣" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/蜜枣.webp);"></div>
+          <div class="text">
+            <h2>蜜枣</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/赤小豆" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/赤小豆.webp);"></div>
+          <div class="text">
+            <h2>赤小豆</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/酸枣仁" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/酸枣仁.webp);"></div>
+          <div class="text">
+            <h2>酸枣仁</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/银耳" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/银耳.webp);"></div>
+          <div class="text">
+            <h2>银耳</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/陈皮" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/陈皮.png);"></div>
+          <div class="text">
+            <h2>陈皮</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/马齿笕" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/马齿笕.webp);"></div>
+          <div class="text">
+            <h2>马齿笕</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/高丽参" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/高丽参.webp);"></div>
+          <div class="text">
+            <h2>高丽参</h2> 
+          </div>
+         </a>
+        </div>
+        <div class="main1">
+          <a href="https://baike.baidu.com/item/鸡内金" target="_blank">
+          <div class="img" style="background-image: url(../image/草药2/鸡内金.webp);"></div>
+          <div class="text">
+            <h2>鸡内金</h2> 
+          </div>
+         </a>
+        </div>
+      
+        <!-- <div class="main1">
+        <div class="img img-2"></div>
+        <div class="text">
+          <h2>我是小标题</h2>
+          <div>我是正文，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+        </div>
+      </div>
+
+      <div class="main1">
+        <div class="img img-3"></div>
+        <div class="text">
+          <h2>我是小标题</h2>
+          <div>我是正文，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+        </div>
+      </div>
+      <div class="main1">
+        <div class="img img-4"></div>
+        <div class="text">
+          <h2>我是小标题</h2>
+          <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我是正文，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+        </div>
+     </div> -->
+    </div> 
+  </div>    
+    <!-- <footer>我是底部</footer> -->
+</div>
+</div> 
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/toTop.js"></script> 
+</html> 
